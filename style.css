@@ -14,7 +14,6 @@ body {
 
 header {
   display: flex;
-  align-items: right;
   justify-content: space-between;
   padding: 33px 9%;
   background: rgba(34, 34, 222, 0.493);
