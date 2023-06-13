@@ -159,7 +159,27 @@ h5 {
   font-size: 25px;
   margin-left: 25px;
 }
-
+.link {
+  background-color: rgba(195, 43, 245, 0.647);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 30px;
+  border: solid white;
+}
+.link1 {
+  background-color: rgba(195, 43, 245, 0.647);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 30px;
+  border: solid white;
+}
+.link2 {
+  background-color: rgba(195, 43, 245, 0.647);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 30px;
+  border: solid white;
+}
 .box {
   background: rgba(255, 255, 255, 0.39);
   padding-bottom: 5vh;
@@ -475,6 +495,7 @@ hr {
   height: 200px;
   width: auto;
 }
+
 .spilskærmebox {
   margin-top: 50px;
   margin-left: 90px;
@@ -485,6 +506,7 @@ hr {
   border-radius: 100px;
   border: 5px solid white;
 }
+
 .pspilskærm {
   text-align: center;
   font-size: 50px;
@@ -538,6 +560,24 @@ hr {
   border-radius: 100px;
 }
 
+.redesignmgp {
+  max-width: 500px;
+  display: grid;
+  margin-top: 50px;
+  margin-left: 50px;
+  padding: 50px;
+  background-color: rgba(102, 17, 182, 0.158);
+  border: 5px solid white;
+  border-radius: 100px;
+}
+.redesignmgp img {
+  height: 200px;
+  width: auto;
+}
+.gridredesign {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 /************************************************ PROCESS ************************************************/
 
 .xdprototyper {
@@ -1174,9 +1214,9 @@ hr {
   }
   .surveymgp {
     max-width: 500px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
     background-color: rgba(102, 17, 182, 0.158);
     border: 5px solid white;
     border-radius: 100px;
@@ -1185,7 +1225,7 @@ hr {
     max-width: 500px;
     margin-left: 20px;
     margin-right: 20px;
-    padding: 50px;
+    padding: 20px;
     background-color: rgba(102, 17, 182, 0.158);
     border: 5px solid white;
     border-radius: 100px;
@@ -1200,6 +1240,25 @@ hr {
     background-color: rgba(102, 17, 182, 0.158);
     border: 5px solid white;
     border-radius: 100px;
+  }
+  .redesignmgp {
+    max-width: 500px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    background-color: rgba(102, 17, 182, 0.158);
+    border: 5px solid white;
+    border-radius: 100px;
+  }
+  .redesignmgp img {
+    height: 200px;
+    width: auto;
+  }
+  .gridredesign {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 
   /************************************************ PROCESS ************************************************/
