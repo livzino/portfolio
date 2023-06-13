@@ -11,6 +11,130 @@ body {
   background-image: url(img/11614600519fevicrkdlg4ut0whtvq6do7q2yszndbmve2q22vrao3lpwvqyubmorenb7qxexofgy5lntwejs8z5cujubndzmk39kl3m6ycx0xv.png);
   background-size: cover;
 }
+header {
+  background-image: url(img/header.png);
+  padding: 30px;
+}
+#burger-menu {
+  cursor: pointer;
+  height: 27px;
+  width: 27px;
+  margin: 30px;
+  overflow: visible;
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  right: 0;
+}
+
+#burger-menu span,
+#burger-menu span:before,
+#burger-menu span:after {
+  display: block;
+  height: 2px;
+  opacity: 1;
+  position: absolute;
+  transition: 0.3s ease-in-out;
+}
+
+#burger-menu span:before,
+#burger-menu span:after {
+  content: "";
+}
+
+#burger-menu span:before {
+  left: 0px;
+  top: -10px;
+  width: 27px;
+
+  background: #22023d;
+}
+
+#burger-menu span {
+  right: 0px;
+  top: 13px;
+  width: 27px;
+  background: #22023d;
+}
+
+#burger-menu span:after {
+  left: 0px;
+  top: 10px;
+  width: 27px;
+  background: #22023d;
+}
+
+#burger-menu.close span:before {
+  top: 0px;
+  transform: rotate(90deg);
+  width: 27px;
+  background: #22023d;
+}
+
+#burger-menu.close span {
+  transform: rotate(-45deg);
+  top: 13px;
+  width: 27px;
+  background: #22023d;
+}
+
+#burger-menu.close span:after {
+  top: 0px;
+  left: 0;
+  transform: rotate(90deg);
+  opacity: 0;
+  width: 0;
+}
+
+#menu {
+  z-index: 1;
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  padding-top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+#menu.overlay {
+  visibility: visible;
+  opacity: 1;
+  padding-top: 100px;
+  background: #ef02a4;
+}
+
+#menu ul {
+  padding: 0;
+}
+
+#menu li {
+  list-style: none;
+  font-family: "Indie Flower";
+}
+
+#menu ul li a {
+  color: #22023d;
+  display: block;
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#menu ul li a:hover {
+  color: #fee1bb;
+}
+
+#menu ul li a.activee {
+  color: #6e2200;
+  text-decoration: underline;
+}
+/********************************************************************* DESKTOP **********************************************************************/
+
 p {
   font-family: "Hind Vadodara", sans-serif;
   font-weight: 500;
@@ -32,49 +156,22 @@ h5 {
   font-size: 25px;
   margin-left: 25px;
 }
-header {
-  display: flex;
-  justify-content: space-between;
-  position: sticky;
-  background-image: url(img/header.png);
-  background-size: cover;
-  padding-bottom: 30px;
-}
-.logo {
-  width: 200px;
-  height: auto;
-}
 
-.navlist {
-  display: flex;
-  padding-top: 60px;
-  margin-right: 100px;
-}
-.navlist a {
-  color: rgb(0, 0, 0);
-  margin-left: 60px;
-  font-size: 15px;
-  font-weight: 500;
-  border-bottom: 2px solid transparent;
-  transition: all 0.55s ease;
-}
-.navlist a:hover {
-  border-bottom: 2px solid white;
-}
 .box {
   background: rgba(255, 255, 255, 0.39);
   padding-bottom: 5vh;
   width: 90%;
-  margin-left: 30px;
+  margin-left: 80px;
   gap: 60px;
   justify-content: center;
   align-items: center;
   border: double white;
   box-shadow: 5px 5px 100px 5px rgba(240, 6, 209, 0.589);
+  border-radius: 100px;
 }
 
 .hforside {
-  font-size: 40px;
+  font-size: 60px;
   color: #fff;
   margin-top: 60px;
 
@@ -93,7 +190,7 @@ header {
 }
 .forsideb {
   height: auto;
-  width: 200px;
+  width: 300px;
   border-radius: 50%;
   margin: 30px;
 }
@@ -108,12 +205,14 @@ header {
   margin-left: 40px;
 }
 .ikoner {
+  width: 80px;
+  height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20%;
+  gap: 120%;
   position: absolute;
-  margin-left: 300px;
-  margin-top: 100px;
+  margin-left: 380px;
+  margin-top: 170px;
 }
 hr {
   margin: 30px;
@@ -171,22 +270,41 @@ hr {
 .h1ommig {
   margin-top: 50px;
 }
+.hommig {
+  font-size: 60px;
+  color: #fff;
+  margin-top: 60px;
+
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
 .livb {
   margin-left: 70px;
-}
-.ommiggrid {
 }
 .ommigp {
   margin-left: 0px;
 }
-
+.ommiggrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 .cvboks {
   margin-top: 50px;
   margin-right: 30px;
   padding: 30px;
   background-color: rgba(102, 17, 182, 0.158);
   border-radius: 20%;
-  border: 5px dotted white;
+  border: 5px solid white;
 }
 
 /*************************************** web **************************************/
@@ -205,28 +323,32 @@ hr {
   margin-left: 30px;
   padding: 10px;
   background-color: rgba(102, 17, 182, 0.158);
-  border-radius: 20%;
-  border: 5px dotted white;
+  border-radius: 100px;
+  border: 5px solid white;
 }
 .boxweb2 {
   margin-top: 50px;
   margin-right: 30px;
   padding: 30px;
   background-color: rgba(102, 17, 182, 0.158);
-  border-radius: 20%;
-  border: 5px dotted rgb(255, 255, 255);
+  border-radius: 100px;
+  border: 5px solid rgb(255, 255, 255);
 }
 .boxweb3 {
   background: rgba(255, 255, 255, 0.39);
   padding-bottom: 5vh;
   margin-bottom: 50px;
   margin-top: 60px;
-  width: 91%;
-  margin-left: 20px;
+  width: 85%;
+  margin-left: 100px;
+  margin-right: 150px;
   box-shadow: 5px 5px 100px 5px rgba(49, 6, 240, 0.322);
   border: solid rgb(255, 255, 255);
+  border-radius: 100px;
 }
-
+.gridweb {
+  display: flex;
+}
 .hweb2 {
   margin-top: 10px;
   text-align: center;
@@ -242,27 +364,166 @@ hr {
 }
 
 /************************************** UX ***************************************/
-
+.gridux {
+  display: flex;
+}
+.boxux {
+  margin-top: 50px;
+  margin-right: 30px;
+  margin-left: 100px;
+  padding: 10px;
+  background-color: rgba(102, 17, 182, 0.158);
+  border-radius: 100px;
+  border: 5px solid white;
+}
+.boxux2 {
+  margin-top: 50px;
+  margin-left: 10px;
+  padding: 60px;
+  background-color: rgba(102, 17, 182, 0.158);
+  border-radius: 100px;
+  border: 5px solid white;
+}
+.gridcopy {
+  display: flex;
+}
 .copyelementer {
   max-width: 500px;
+  display: grid;
   margin-top: 50px;
-  margin-left: 50px;
+  margin-left: 100px;
   padding: 50px;
   background-color: rgba(102, 17, 182, 0.158);
   border: 5px solid white;
-  border-radius: 20%;
+  border-radius: 100px;
 }
 .microcypy {
   max-width: 500px;
+  display: grid;
+  margin-top: 50px;
+  margin-left: 100px;
+  padding: 50px;
+  background-color: rgba(102, 17, 182, 0.158);
+  border: 5px solid white;
+  border-radius: 100px;
+}
+.surveyboks {
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 50px;
+  background-color: rgba(102, 17, 182, 0.158);
+  border: 5px solid white;
+  border-radius: 100px;
+}
+.psurvey {
+  font-weight: 800;
+  font-size: 40px;
+  text-align: center;
+}
+.tænkehøjt {
+  max-width: 1100px;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  border: 5px solid white;
+  border-radius: 100px;
+}
+/*********************************************** Animation ***********************************************/
+.gridanimation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.h4ani {
+  font-size: 30px;
+  margin-left: 25px;
+}
+.gridani {
+  display: flex;
+  max-width: 1120px;
+  margin-top: 50px;
+  margin-left: 80px;
+  padding: 30px;
+
+  background-color: rgba(102, 17, 182, 0.158);
+  border-radius: 100px;
+  border: 5px solid white;
+}
+.statemachine {
+  max-width: 500px;
+  display: grid;
   margin-top: 50px;
   margin-left: 50px;
   padding: 50px;
   background-color: rgba(102, 17, 182, 0.158);
   border: 5px solid white;
-  border-radius: 20%;
+  border-radius: 100px;
+}
+
+.boxanimation {
+  margin-top: 50px;
+  margin-left: 90px;
+  padding: 30px;
+  background-color: rgba(102, 17, 182, 0.158);
+  border-radius: 100px;
+  border: 5px solid white;
+}
+.boxanimation2 img {
+  height: 200px;
+  width: auto;
+}
+.spilskærmebox {
+  margin-top: 50px;
+  margin-left: 90px;
+  margin-right: 90px;
+  padding: 30px;
+  padding-left: 100px;
+  background-color: rgba(102, 17, 182, 0.158);
+  border-radius: 100px;
+  border: 5px solid white;
+}
+.pspilskærm {
+  text-align: center;
+  font-size: 50px;
+}
+.boxanimation2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.jordbær {
+  border-radius: 60px;
+}
+.kirsebær {
+  border-radius: 60px;
+}
+.hindbær {
+  border-radius: 60px;
+}
+.citron {
+  border-radius: 60px;
 }
 
 /*********************************************** Inhold ************************************************/
+.gridmgp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.surveymgp {
+  max-width: 500px;
+  margin-left: 100px;
+  padding: 50px;
+  background-color: rgba(102, 17, 182, 0.158);
+  border: 5px solid white;
+  border-radius: 100px;
+}
+.screenmgp {
+  max-width: 500px;
+  margin-left: 60px;
+  padding: 50px;
+  background-color: rgba(102, 17, 182, 0.158);
+  border: 5px solid white;
+  border-radius: 100px;
+}
 .videobox {
   max-width: 500px;
   display: grid;
@@ -270,8 +531,21 @@ hr {
   margin-left: 100px;
   padding: 50px;
   background-color: rgba(102, 17, 182, 0.158);
-  border: 5px dotted white;
-  border-radius: 20%;
+  border: 5px solid white;
+  border-radius: 100px;
+}
+
+/************************************************ PROCESS ************************************************/
+
+.xdprototyper {
+  max-width: 600px;
+
+  margin-top: 50px;
+  margin-left: 100px;
+  padding: 80px;
+  background-color: rgba(102, 17, 182, 0.158);
+  border: 5px solid white;
+  border-radius: 100px;
 }
 
 /************************************** slideshow *******************************/
@@ -370,9 +644,9 @@ hr {
   }
 }
 
-/********************************************************************* DESKTOP **********************************************************************/
+/****************************************************************************************************** mobil **********************************************************/
 
-@media (min-width: 800px) {
+@media only screen and (max-width: 800px) {
   p {
     font-family: "Hind Vadodara", sans-serif;
     font-weight: 500;
@@ -395,40 +669,132 @@ hr {
     margin-left: 25px;
   }
   header {
-    display: flex;
-    justify-content: space-between;
-    position: sticky;
     background-image: url(img/header.png);
-    background-size: cover;
-    padding-bottom: 30px;
+    padding: 30px;
   }
-  .logo {
-    width: 350px;
-    height: auto;
-    margin-left: 50px;
+  #burger-menu {
+    cursor: pointer;
+    height: 27px;
+    width: 27px;
+    margin: 30px;
+    overflow: visible;
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    right: 0;
   }
 
-  .navlist {
-    display: flex;
-    padding-top: 60px;
-    margin-right: 100px;
+  #burger-menu span,
+  #burger-menu span:before,
+  #burger-menu span:after {
+    display: block;
+    height: 2px;
+    opacity: 1;
+    position: absolute;
+    transition: 0.3s ease-in-out;
   }
-  .navlist a {
-    color: rgb(0, 0, 0);
-    margin-left: 60px;
-    font-size: 15px;
-    font-weight: 500;
-    border-bottom: 2px solid transparent;
-    transition: all 0.55s ease;
+
+  #burger-menu span:before,
+  #burger-menu span:after {
+    content: "";
   }
-  .navlist a:hover {
-    border-bottom: 2px solid white;
+
+  #burger-menu span:before {
+    left: 0px;
+    top: -10px;
+    width: 27px;
+
+    background: #22023d;
+  }
+
+  #burger-menu span {
+    right: 0px;
+    top: 13px;
+    width: 27px;
+    background: #22023d;
+  }
+
+  #burger-menu span:after {
+    left: 0px;
+    top: 10px;
+    width: 27px;
+    background: #22023d;
+  }
+
+  #burger-menu.close span:before {
+    top: 0px;
+    transform: rotate(90deg);
+    width: 27px;
+    background: #22023d;
+  }
+
+  #burger-menu.close span {
+    transform: rotate(-45deg);
+    top: 13px;
+    width: 27px;
+    background: #22023d;
+  }
+
+  #burger-menu.close span:after {
+    top: 0px;
+    left: 0;
+    transform: rotate(90deg);
+    opacity: 0;
+    width: 0;
+  }
+
+  #menu {
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    padding-top: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #menu.overlay {
+    visibility: visible;
+    opacity: 1;
+    padding-top: 100px;
+    background: #ef02a4;
+  }
+
+  #menu ul {
+    padding: 0;
+  }
+
+  #menu li {
+    list-style: none;
+    font-family: "Indie Flower";
+  }
+
+  #menu ul li a {
+    color: #22023d;
+    display: block;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  #menu ul li a:hover {
+    color: #fee1bb;
+  }
+
+  #menu ul li a.activee {
+    color: #6e2200;
+    text-decoration: underline;
   }
   .box {
     background: rgba(255, 255, 255, 0.39);
     padding-bottom: 5vh;
-    width: 90%;
-    margin-left: 80px;
+    width: 92%;
+    margin-left: 20px;
     gap: 60px;
     justify-content: center;
     align-items: center;
@@ -438,10 +804,10 @@ hr {
   }
 
   .hforside {
-    font-size: 60px;
+    font-size: 40px;
     color: #fff;
     margin-top: 60px;
-
+    margin-left: 60px;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
     animation: glow 1s ease-in-out infinite alternate;
@@ -460,26 +826,28 @@ hr {
     width: 300px;
     border-radius: 50%;
     margin: 30px;
+    margin-left: 80px;
   }
 
   .forsidegrid {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
   .portfolio {
-    margin-top: 50px;
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-top: 80px;
+    margin-left: 30px;
+    margin-right: 2px;
   }
   .ikoner {
-    width: 80px;
+    width: 50px;
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 120%;
     position: absolute;
-    margin-left: 380px;
-    margin-top: 170px;
+    margin-left: 60px;
+    margin-top: 550px;
   }
   hr {
     margin: 30px;
@@ -534,22 +902,40 @@ hr {
 
   /************************************ OM MIG ****************************************/
 
-  .h1ommig {
-    margin-top: 50px;
+  .hommig {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    margin-left: 150px;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
   }
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
   .livb {
-    margin-left: 70px;
+    margin-left: 120px;
   }
   .ommigp {
-    margin-left: 0px;
+    margin-left: 60px;
   }
   .ommiggrid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
   .cvboks {
     margin-top: 50px;
-    margin-right: 30px;
+    margin-left: 20px;
     padding: 30px;
     background-color: rgba(102, 17, 182, 0.158);
     border-radius: 20%;
@@ -577,7 +963,7 @@ hr {
   }
   .boxweb2 {
     margin-top: 50px;
-    margin-right: 30px;
+    margin-left: 30px;
     padding: 30px;
     background-color: rgba(102, 17, 182, 0.158);
     border-radius: 100px;
@@ -589,18 +975,20 @@ hr {
     margin-bottom: 50px;
     margin-top: 60px;
     width: 85%;
-    margin-left: 100px;
-    margin-right: 150px;
+    margin-left: 40px;
     box-shadow: 5px 5px 100px 5px rgba(49, 6, 240, 0.322);
     border: solid rgb(255, 255, 255);
     border-radius: 100px;
   }
   .gridweb {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
   .hweb2 {
     margin-top: 10px;
     text-align: center;
+    margin-left: 30px;
   }
 
   .h3web {
@@ -614,95 +1002,112 @@ hr {
 
   /************************************** UX ***************************************/
   .gridux {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
   .boxux {
     margin-top: 50px;
-    margin-right: 30px;
-    margin-left: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
     padding: 10px;
     background-color: rgba(102, 17, 182, 0.158);
     border-radius: 100px;
     border: 5px solid white;
   }
   .boxux2 {
-    margin-top: 50px;
+    margin-top: 40px;
     margin-left: 10px;
+    margin-bottom: 40px;
     padding: 60px;
     background-color: rgba(102, 17, 182, 0.158);
     border-radius: 100px;
     border: 5px solid white;
   }
   .gridcopy {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
   .copyelementer {
-    max-width: 500px;
-    display: grid;
+    max-width: 600px;
     margin-top: 50px;
-    margin-left: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 50px;
     background-color: rgba(102, 17, 182, 0.158);
     border: 5px solid white;
     border-radius: 100px;
   }
   .microcypy {
-    max-width: 500px;
-    display: grid;
+    max-width: 600px;
     margin-top: 50px;
-    margin-left: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 50px;
     background-color: rgba(102, 17, 182, 0.158);
     border: 5px solid white;
     border-radius: 100px;
   }
   .surveyboks {
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
-    padding: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+    padding: 30px;
     background-color: rgba(102, 17, 182, 0.158);
     border: 5px solid white;
     border-radius: 100px;
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+  }
+  .surveyboks img {
+    height: 150px;
+    width: auto;
   }
   .psurvey {
-    font-weight: 800;
+    font-weight: 500;
     font-size: 40px;
     text-align: center;
   }
   .tænkehøjt {
-    max-width: 1100px;
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
+    max-width: 450px;
+    margin-top: 40px;
+    margin-left: 2px;
+    margin-right: 20px;
     border: 5px solid white;
     border-radius: 100px;
   }
   /*********************************************** Animation ***********************************************/
   .gridanimation {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
   .h4ani {
     font-size: 30px;
     margin-left: 25px;
   }
   .gridani {
-    display: flex;
     max-width: 1120px;
     margin-top: 50px;
-    margin-left: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 30px;
-
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     background-color: rgba(102, 17, 182, 0.158);
     border-radius: 100px;
     border: 5px solid white;
   }
+
   .statemachine {
     max-width: 500px;
     display: grid;
-    margin-top: 50px;
-    margin-left: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 50px;
     background-color: rgba(102, 17, 182, 0.158);
     border: 5px solid white;
@@ -710,34 +1115,40 @@ hr {
   }
 
   .boxanimation {
-    margin-top: 50px;
-    margin-left: 90px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 30px;
     background-color: rgba(102, 17, 182, 0.158);
     border-radius: 100px;
     border: 5px solid white;
   }
   .boxanimation2 img {
-    height: 200px;
+    height: 160px;
     width: auto;
+    margin-left: 65px;
+    padding-bottom: 20px;
   }
   .spilskærmebox {
     margin-top: 50px;
-    margin-left: 90px;
-    margin-right: 90px;
-    padding: 30px;
-    padding-left: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    padding-bottom: 50px;
+    padding: 2px;
     background-color: rgba(102, 17, 182, 0.158);
     border-radius: 100px;
     border: 5px solid white;
   }
+
   .pspilskærm {
-    text-align: center;
     font-size: 50px;
+    text-align: center;
   }
   .boxanimation2 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
   }
   .jordbær {
     border-radius: 60px;
@@ -755,11 +1166,13 @@ hr {
   /*********************************************** Inhold ************************************************/
   .gridmgp {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
   .surveymgp {
     max-width: 500px;
-    margin-left: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 50px;
     background-color: rgba(102, 17, 182, 0.158);
     border: 5px solid white;
@@ -767,7 +1180,8 @@ hr {
   }
   .screenmgp {
     max-width: 500px;
-    margin-left: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 50px;
     background-color: rgba(102, 17, 182, 0.158);
     border: 5px solid white;
@@ -777,7 +1191,8 @@ hr {
     max-width: 500px;
     display: grid;
     margin-top: 50px;
-    margin-left: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 50px;
     background-color: rgba(102, 17, 182, 0.158);
     border: 5px solid white;
@@ -785,17 +1200,6 @@ hr {
   }
 
   /************************************************ PROCESS ************************************************/
-
-  .xdprototyper {
-    max-width: 600px;
-
-    margin-top: 50px;
-    margin-left: 100px;
-    padding: 80px;
-    background-color: rgba(102, 17, 182, 0.158);
-    border: 5px solid white;
-    border-radius: 100px;
-  }
 
   /************************************** slideshow *******************************/
 
