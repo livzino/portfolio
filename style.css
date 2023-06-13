@@ -753,6 +753,26 @@ hr {
   }
 
   /*********************************************** Inhold ************************************************/
+  .gridmgp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .surveymgp {
+    max-width: 500px;
+    margin-left: 100px;
+    padding: 50px;
+    background-color: rgba(102, 17, 182, 0.158);
+    border: 5px solid white;
+    border-radius: 100px;
+  }
+  .screenmgp {
+    max-width: 500px;
+    margin-left: 60px;
+    padding: 50px;
+    background-color: rgba(102, 17, 182, 0.158);
+    border: 5px solid white;
+    border-radius: 100px;
+  }
   .videobox {
     max-width: 500px;
     display: grid;
