@@ -191,6 +191,7 @@ h5 {
   border: double white;
   box-shadow: 5px 5px 100px 5px rgba(240, 6, 209, 0.589);
   border-radius: 100px;
+  margin-bottom: 80px;
 }
 
 .hforside {
@@ -457,6 +458,14 @@ hr {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+.h2ani {
+  font-size: 30px;
+  margin-left: 25px;
+}
+.statedia {
+  font-size: 30px;
+  margin-left: 25px;
+}
 .h4ani {
   font-size: 30px;
   margin-left: 25px;
@@ -477,7 +486,7 @@ hr {
   display: grid;
   margin-top: 50px;
   margin-left: 50px;
-  padding: 50px;
+  padding: 30px;
   background-color: rgba(102, 17, 182, 0.158);
   border: 5px solid white;
   border-radius: 100px;
@@ -1121,7 +1130,7 @@ hr {
     border: 5px solid white;
     border-radius: 100px;
   }
-  /*********************************************** Animation ***********************************************/
+  /**************************************************** Animation ***********************************************/
   .gridanimation {
     display: grid;
     grid-template-columns: 1fr;
@@ -1166,12 +1175,14 @@ hr {
     border-radius: 100px;
     border: 5px solid white;
   }
+
   .boxanimation2 img {
     height: 160px;
     width: auto;
     margin-left: 65px;
     padding-bottom: 20px;
   }
+
   .spilskærmebox {
     margin-top: 50px;
     margin-left: 10px;
@@ -1261,7 +1272,7 @@ hr {
     grid-template-rows: 1fr 1fr;
   }
 
-  /************************************************ PROCESS ************************************************/
+  /************************************************ PROCESS *********************************/
 
   /************************************** slideshow *******************************/
 
