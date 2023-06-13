@@ -6,7 +6,9 @@
   list-style: none;
   text-decoration: none;
 }
-
+pre {
+  font-family: "Hind Vadodara", sans-serif;
+}
 body {
   background-image: url(img/11614600519fevicrkdlg4ut0whtvq6do7q2yszndbmve2q22vrao3lpwvqyubmorenb7qxexofgy5lntwejs8z5cujubndzmk39kl3m6ycx0xv.webp);
   background-size: cover;
@@ -670,7 +672,7 @@ hr {
     margin-left: 25px;
   }
   header {
-    background-image: url(img/header.png);
+    background-image: url(img/header.webp);
     padding: 30px;
   }
   #burger-menu {
