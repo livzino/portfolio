@@ -11,7 +11,27 @@ body {
   background-image: url(img/11614600519fevicrkdlg4ut0whtvq6do7q2yszndbmve2q22vrao3lpwvqyubmorenb7qxexofgy5lntwejs8z5cujubndzmk39kl3m6ycx0xv.png);
   background-size: cover;
 }
-
+p {
+  font-family: "Hind Vadodara", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 25px;
+}
+h2 {
+  font-family: "Hind Vadodara", sans-serif;
+}
+h3 {
+  font-family: "Hind Vadodara", sans-serif;
+}
+h4 {
+  font-family: "Hind Vadodara", sans-serif;
+}
+h5 {
+  font-family: "Hind Vadodara", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  margin-left: 25px;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -21,7 +41,7 @@ header {
   padding-bottom: 30px;
 }
 .logo {
-  width: 100px;
+  width: 200px;
   height: auto;
 }
 
@@ -44,8 +64,8 @@ header {
 .box {
   background: rgba(255, 255, 255, 0.39);
   padding-bottom: 5vh;
-  width: 80%;
-  margin-left: 140px;
+  width: 90%;
+  margin-left: 30px;
   gap: 60px;
   justify-content: center;
   align-items: center;
@@ -54,7 +74,7 @@ header {
 }
 
 .hforside {
-  font-size: 60px;
+  font-size: 40px;
   color: #fff;
   margin-top: 60px;
 
@@ -73,7 +93,7 @@ header {
 }
 .forsideb {
   height: auto;
-  width: 300px;
+  width: 200px;
   border-radius: 50%;
   margin: 30px;
 }
@@ -88,17 +108,16 @@ header {
   margin-left: 40px;
 }
 .ikoner {
-  width: 80px;
-  height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 120%;
+  gap: 20%;
   position: absolute;
-  margin-left: 380px;
-  margin-top: 170px;
+  margin-left: 300px;
+  margin-top: 100px;
 }
 hr {
   margin: 30px;
+  color: #8403a4;
 }
 
 /************************************** SCROLLER *************************************/
@@ -152,16 +171,22 @@ hr {
 .h1ommig {
   margin-top: 50px;
 }
-.ommiggrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.livb {
+  margin-left: 70px;
 }
+.ommiggrid {
+}
+.ommigp {
+  margin-left: 0px;
+}
+
 .cvboks {
   margin-top: 50px;
   margin-right: 30px;
   padding: 30px;
   background-color: rgba(102, 17, 182, 0.158);
   border-radius: 20%;
+  border: 5px dotted white;
 }
 
 /*************************************** web **************************************/
@@ -178,7 +203,7 @@ hr {
   margin-top: 50px;
   margin-right: 30px;
   margin-left: 30px;
-  padding: 30px;
+  padding: 10px;
   background-color: rgba(102, 17, 182, 0.158);
   border-radius: 20%;
   border: 5px dotted white;
@@ -195,15 +220,13 @@ hr {
   background: rgba(255, 255, 255, 0.39);
   padding-bottom: 5vh;
   margin-bottom: 50px;
-  margin-top: 20px;
+  margin-top: 60px;
   width: 91%;
-  margin-left: 60px;
+  margin-left: 20px;
   box-shadow: 5px 5px 100px 5px rgba(49, 6, 240, 0.322);
   border: solid rgb(255, 255, 255);
 }
-.gridweb {
-  display: flex;
-}
+
 .hweb2 {
   margin-top: 10px;
   text-align: center;
@@ -220,36 +243,38 @@ hr {
 
 /************************************** UX ***************************************/
 
-.gridcopy {
-  display: flex;
-}
 .copyelementer {
   max-width: 500px;
-  display: grid;
   margin-top: 50px;
   margin-left: 50px;
-  margin-right: 50px;
   padding: 50px;
   background-color: rgba(102, 17, 182, 0.158);
-  border: dotted white;
+  border: 5px solid white;
   border-radius: 20%;
 }
 .microcypy {
   max-width: 500px;
-  display: grid;
   margin-top: 50px;
-  margin-right: 30px;
+  margin-left: 50px;
   padding: 50px;
   background-color: rgba(102, 17, 182, 0.158);
-  border: dotted white;
+  border: 5px solid white;
+  border-radius: 20%;
+}
+
+/*********************************************** Inhold ************************************************/
+.videobox {
+  max-width: 500px;
+  display: grid;
+  margin-top: 50px;
+  margin-left: 100px;
+  padding: 50px;
+  background-color: rgba(102, 17, 182, 0.158);
+  border: 5px dotted white;
   border-radius: 20%;
 }
 
 /************************************** slideshow *******************************/
-
-* {
-  box-sizing: border-box;
-}
 
 /* Slideshow container */
 .slideshow-container {
@@ -342,5 +367,509 @@ hr {
   }
   to {
     opacity: 1;
+  }
+}
+
+/********************************************************************* DESKTOP **********************************************************************/
+
+@media (min-width: 800px) {
+  p {
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 25px;
+  }
+  h2 {
+    font-family: "Hind Vadodara", sans-serif;
+  }
+  h3 {
+    font-family: "Hind Vadodara", sans-serif;
+  }
+  h4 {
+    font-family: "Hind Vadodara", sans-serif;
+  }
+  h5 {
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    margin-left: 25px;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    background-image: url(img/header.png);
+    background-size: cover;
+    padding-bottom: 30px;
+  }
+  .logo {
+    width: 350px;
+    height: auto;
+    margin-left: 50px;
+  }
+
+  .navlist {
+    display: flex;
+    padding-top: 60px;
+    margin-right: 100px;
+  }
+  .navlist a {
+    color: rgb(0, 0, 0);
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: all 0.55s ease;
+  }
+  .navlist a:hover {
+    border-bottom: 2px solid white;
+  }
+  .box {
+    background: rgba(255, 255, 255, 0.39);
+    padding-bottom: 5vh;
+    width: 90%;
+    margin-left: 80px;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    border: double white;
+    box-shadow: 5px 5px 100px 5px rgba(240, 6, 209, 0.589);
+    border-radius: 100px;
+  }
+
+  .hforside {
+    font-size: 60px;
+    color: #fff;
+    margin-top: 60px;
+
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+  .forsideb {
+    height: auto;
+    width: 300px;
+    border-radius: 50%;
+    margin: 30px;
+  }
+
+  .forsidegrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .portfolio {
+    margin-top: 50px;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+  .ikoner {
+    width: 80px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 120%;
+    position: absolute;
+    margin-left: 380px;
+    margin-top: 170px;
+  }
+  hr {
+    margin: 30px;
+    color: #8403a4;
+  }
+
+  /************************************** SCROLLER *************************************/
+
+  .scroller {
+    max-width: 1000px;
+
+    overflow-x: scroll;
+    white-space: nowrap;
+    margin-left: 50px;
+    background-color: rgba(0, 0, 255, 0.007);
+  }
+
+  .scroller::-webkit-scrollbar {
+    display: flex;
+  }
+
+  .scroller-item {
+    position: relative;
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+    display: inline-block;
+    margin: 20px;
+  }
+
+  .scroller-item::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% + 15px);
+    height: calc(100% + 15px);
+    background-image: linear-gradient(45deg, yellow 0%, orange 25%, red 50%, purple 75%, pink 100%);
+    border-radius: inherit;
+    z-index: -1;
+    margin: 20px;
+  }
+  .scroller-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px;
+  }
+
+  /************************************ OM MIG ****************************************/
+
+  .h1ommig {
+    margin-top: 50px;
+  }
+  .livb {
+    margin-left: 70px;
+  }
+  .ommigp {
+    margin-left: 0px;
+  }
+  .ommiggrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .cvboks {
+    margin-top: 50px;
+    margin-right: 30px;
+    padding: 30px;
+    background-color: rgba(102, 17, 182, 0.158);
+    border-radius: 20%;
+    border: 5px solid white;
+  }
+
+  /*************************************** web **************************************/
+  .hweb {
+    font-size: 60px;
+    color: #fff;
+    margin-top: 60px;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  .boxweb {
+    margin-top: 50px;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding: 10px;
+    background-color: rgba(102, 17, 182, 0.158);
+    border-radius: 100px;
+    border: 5px solid white;
+  }
+  .boxweb2 {
+    margin-top: 50px;
+    margin-right: 30px;
+    padding: 30px;
+    background-color: rgba(102, 17, 182, 0.158);
+    border-radius: 100px;
+    border: 5px solid rgb(255, 255, 255);
+  }
+  .boxweb3 {
+    background: rgba(255, 255, 255, 0.39);
+    padding-bottom: 5vh;
+    margin-bottom: 50px;
+    margin-top: 60px;
+    width: 85%;
+    margin-left: 100px;
+    margin-right: 150px;
+    box-shadow: 5px 5px 100px 5px rgba(49, 6, 240, 0.322);
+    border: solid rgb(255, 255, 255);
+    border-radius: 100px;
+  }
+  .gridweb {
+    display: flex;
+  }
+  .hweb2 {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .h3web {
+    text-align: center;
+    font-size: 30px;
+  }
+  .h4web {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  /************************************** UX ***************************************/
+  .gridux {
+    display: flex;
+  }
+  .boxux {
+    margin-top: 50px;
+    margin-right: 30px;
+    margin-left: 100px;
+    padding: 10px;
+    background-color: rgba(102, 17, 182, 0.158);
+    border-radius: 100px;
+    border: 5px solid white;
+  }
+  .boxux2 {
+    margin-top: 50px;
+    margin-left: 10px;
+    padding: 60px;
+    background-color: rgba(102, 17, 182, 0.158);
+    border-radius: 100px;
+    border: 5px solid white;
+  }
+  .gridcopy {
+    display: flex;
+  }
+  .copyelementer {
+    max-width: 500px;
+    display: grid;
+    margin-top: 50px;
+    margin-left: 100px;
+    padding: 50px;
+    background-color: rgba(102, 17, 182, 0.158);
+    border: 5px solid white;
+    border-radius: 100px;
+  }
+  .microcypy {
+    max-width: 500px;
+    display: grid;
+    margin-top: 50px;
+    margin-left: 100px;
+    padding: 50px;
+    background-color: rgba(102, 17, 182, 0.158);
+    border: 5px solid white;
+    border-radius: 100px;
+  }
+  .surveyboks {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 50px;
+    background-color: rgba(102, 17, 182, 0.158);
+    border: 5px solid white;
+    border-radius: 100px;
+  }
+  .psurvey {
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+  }
+  .tænkehøjt {
+    max-width: 1100px;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border: 5px solid white;
+    border-radius: 100px;
+  }
+  /*********************************************** Animation ***********************************************/
+  .gridanimation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .h4ani {
+    font-size: 30px;
+    margin-left: 25px;
+  }
+  .gridani {
+    display: flex;
+    max-width: 1120px;
+    margin-top: 50px;
+    margin-left: 80px;
+    padding: 30px;
+
+    background-color: rgba(102, 17, 182, 0.158);
+    border-radius: 100px;
+    border: 5px solid white;
+  }
+  .statemachine {
+    max-width: 500px;
+    display: grid;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 50px;
+    background-color: rgba(102, 17, 182, 0.158);
+    border: 5px solid white;
+    border-radius: 100px;
+  }
+
+  .boxanimation {
+    margin-top: 50px;
+    margin-left: 90px;
+    padding: 30px;
+    background-color: rgba(102, 17, 182, 0.158);
+    border-radius: 100px;
+    border: 5px solid white;
+  }
+  .boxanimation2 img {
+    height: 200px;
+    width: auto;
+  }
+  .spilskærmebox {
+    margin-top: 50px;
+    margin-left: 90px;
+    margin-right: 90px;
+    padding: 30px;
+    padding-left: 100px;
+    background-color: rgba(102, 17, 182, 0.158);
+    border-radius: 100px;
+    border: 5px solid white;
+  }
+  .pspilskærm {
+    text-align: center;
+    font-size: 50px;
+  }
+  .boxanimation2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .jordbær {
+    border-radius: 60px;
+  }
+  .kirsebær {
+    border-radius: 60px;
+  }
+  .hindbær {
+    border-radius: 60px;
+  }
+  .citron {
+    border-radius: 60px;
+  }
+
+  /*********************************************** Inhold ************************************************/
+  .videobox {
+    max-width: 500px;
+    display: grid;
+    margin-top: 50px;
+    margin-left: 100px;
+    padding: 50px;
+    background-color: rgba(102, 17, 182, 0.158);
+    border: 5px solid white;
+    border-radius: 100px;
+  }
+
+  /************************************************ PROCESS ************************************************/
+
+  .xdprototyper {
+    max-width: 600px;
+
+    margin-top: 50px;
+    margin-left: 100px;
+    padding: 80px;
+    background-color: rgba(102, 17, 182, 0.158);
+    border: 5px solid white;
+    border-radius: 100px;
+  }
+
+  /************************************** slideshow *******************************/
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Caption text */
+  .text {
+    color: #000000;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.593);
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
